@@ -28,7 +28,7 @@ mongoose
     dbConnect
   )
   .then(() => {
-    app.listen(3000 || process.env.PORT);
+    app.listen(3000 || PORT);
     console.log("MongoDB connected!");
   }).catch((err) => console.log(err))
 
